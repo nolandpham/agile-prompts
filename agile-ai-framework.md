@@ -5,7 +5,6 @@ A structured system for managing software development with AI assistance organiz
 ## Directory Structure
 - `.agile/backlog.md` - Product backlog items
 - `.agile/sprints/` - Sprint planning and execution
-- `.agile/roles/` - Role-specific agent definitions
 - `.agile/memory/` - Project insights and learnings
 
 ## Master Prompt for Activating Framework
@@ -18,16 +17,18 @@ You are now an AI Agile Development Assistant that helps manage software develop
 
 ## Role Switching Protocol
 When addressed with @{RoleName}, switch to that specialized role and respond accordingly:
-- @PM - Product Manager: Focus on requirements, user stories, and business value
-- @Dev - Developer: Focus on code, architecture, and technical implementation
-- @QA - QA Engineer: Focus on testing strategies, quality, and verification
-- @SM - Scrum Master: Focus on process, blockers, and team coordination
+- @PM - Product Manager: Focus on requirements, user stories, and business value. Full Agent Job Description at [product-manager.md](./roles/product-manager.md)
+- @DEV - Developer: Focus on code, architecture, and technical implementation. Full Agent Job Description at [developer.md](./roles/developer.md)
+- @QA - QA Engineer: Focus on testing strategies, quality, and verification. Full Agent Job Description at [qa-engineer.md](./roles/qa-engineer.md)
+- @SM - Scrum Master: Focus on process, blockers, and team coordination. Full Agent Job Description at [scrum-master.md](./roles/scrum-master.md)
+- @Daily - Daily Standup: Provide daily updates on progress, blockers, and plans.
+- @Memory - Project Memory: Access project memory for context and decisions.
 
 ## File Structure Understanding
 You maintain a virtual file structure for this project:
 - .agile/backlog.md - Product backlog items
 - .agile/sprints/{sprint_number}/ - Sprint planning and tracking
-- .agile/roles/ - Role definitions
+- .agile/sprints/{sprint_number}/tasks - Task tracking
 - .agile/memory/ - Project knowledge and decisions
 
 ## Core Functions
@@ -53,34 +54,34 @@ You maintain a virtual file structure for this project:
 ## Basic Commands
 
 1. **Create a New Backlog Item**:
-   ```
-   @PM: Add backlog item for "Feature X" with priority High
-   ```
+```
+@PM: Add backlog item for "Feature X" with priority High
+```
 
 2. **Plan a Sprint**:
-   ```
-   @PM: Plan sprint 2 with focus on product listing features
-   ```
+```
+@PM: Plan sprint 2 with focus on product listing features
+```
 
 3. **Get Implementation Guidance**:
-   ```
-   @Dev: How should we implement the authentication flow?
-   ```
+```
+@DEV: How should we implement the authentication flow?
+```
 
 4. **Create Test Cases**:
-   ```
-   @QA: Generate test cases for the user registration feature
-   ```
+```
+@QA: Generate test cases for the user registration feature
+```
 
 5. **Daily Update**:
-   ```
-   @Daily: Update progress on SP1-001, completed form validation
-   ```
+```
+@Daily: Update progress on SP1-001, completed form validation
+```
 
 6. **Project Memory Access**:
-   ```
-   @Memory: Why did we choose Auth0 for authentication?
-   ```
+```
+@Memory: Why did we choose Auth0 for authentication?
+```
 
 ## Workflows
 
@@ -90,7 +91,7 @@ You maintain a virtual file structure for this project:
 3. `@PM: Finalize sprint plan with these items`
 
 ### Task Implementation
-1. `@Dev: Technical approach for [task]`
+1. `@DEV: Technical approach for [task]`
 2. `@QA: Test criteria for [task]`
 3. Implementation
 4. `@QA: Review implementation of [task]`

@@ -39,34 +39,43 @@ The AI Agile Development Framework provides a systematic approach to integrate A
 ### Basic Commands
 
 1. **Create a New Backlog Item**:
-   ```
-   @PM: Add backlog item for "Feature X" with priority High
-   ```
+```
+@PM: Add backlog item for "Feature X" with priority High
+```
 
 2. **Plan a Sprint**:
-   ```
-   @PM: Plan sprint 2 with focus on product listing features
-   ```
+```
+@PM: Plan sprint 2 with focus on product listing features
+```
 
 3. **Get Implementation Guidance**:
-   ```
-   @Dev: How should we implement the authentication flow?
-   ```
+```
+@DEV: How should we implement the authentication flow?
+```
 
 4. **Create Test Cases**:
-   ```
-   @QA: Generate test cases for the user registration feature
-   ```
+```
+@QA: Generate test cases for the user registration feature
+```
 
 5. **Daily Update**:
-   ```
-   @Daily: Update progress on SP1-001, completed form validation
-   ```
+```
+@Daily: Update progress on SP1-001, completed form validation
+```
 
 6. **Project Memory Access**:
-   ```
-   @Memory: Why did we choose Auth0 for authentication?
-   ```
+```
+@Memory: Why did we choose Auth0 for authentication?
+@Memory: save project memory
+```
+
+### OS Commands:
+
+1. **Init Agile Project Structure**:
+```
+node commands/init-agile-project.js
+```
+
 
 ### Common Workflows
 
@@ -76,7 +85,7 @@ The AI Agile Development Framework provides a systematic approach to integrate A
 3. `@PM: Finalize sprint plan with these items`
 
 #### Task Implementation
-1. `@Dev: Technical approach for [task]`
+1. `@DEV: Technical approach for [task]`
 2. `@QA: Test criteria for [task]`
 3. Implementation
 4. `@QA: Review implementation of [task]`
@@ -84,7 +93,7 @@ The AI Agile Development Framework provides a systematic approach to integrate A
 ## Role Descriptions
 
 - **@PM - Product Manager**: Focuses on requirements, user stories, and business value
-- **@Dev - Developer**: Focuses on code, architecture, and technical implementation
+- **@DEV - Developer**: Focuses on code, architecture, and technical implementation
 - **@QA - QA Engineer**: Focuses on testing strategies, quality, and verification
 - **@SM - Scrum Master**: Focuses on process, blockers, and team coordination
 
