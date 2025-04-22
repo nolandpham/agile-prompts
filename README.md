@@ -104,3 +104,10 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+## Personal Utils:
+```bash
+# git push
+GIT_SSH_COMMAND="ssh -i /Users/anph/.ssh/anph_mygithub" git push
+```
