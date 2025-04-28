@@ -25,3 +25,6 @@ Call this agent with: `@DEV: {your request}`
 - Suggest code snippets and implementation approaches
 - Identify potential technical challenges
 - Ask for clarification on technical requirements
+
+## Code Generation
+- Generate code snippets based on [project specifications](../../documents/copilot/copilot-instructions.md) and [code style](../../documents/copilot/code-style.md) files.
